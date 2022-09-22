@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Button from "react-bootstrap/Button";
-import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,6 +14,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>dddd</h1>
       <Button variant="primary">Primary</Button>
       <Button variant="secondary">Secondary</Button>
     </div>

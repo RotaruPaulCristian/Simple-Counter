@@ -13,10 +13,21 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <h1>dddd</h1>
-      <Button variant="primary">Primary</Button>
-      <Button variant="secondary">Secondary</Button>
+    <div className="App mt-2 d-flex flex-column align-items-center">
+      <div>
+        <Button
+          className="mx-2"
+          onClick={handleIncrement}
+          variant="primary"
+          size="lg"
+        >
+          +
+        </Button>
+        <Button onClick={handleDecrement} variant="secondary" size="lg">
+          -
+        </Button>
+      </div>
+      <h2>{count}</h2>
     </div>
   );
 }
